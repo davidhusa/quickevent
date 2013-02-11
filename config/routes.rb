@@ -7,8 +7,6 @@ Eventapp::Application.routes.draw do
 
   get "geolocations/index"
 
-  get "geolocation/index"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
