@@ -1,4 +1,14 @@
 Eventapp::Application.routes.draw do
+  get "pages/show"
+
+  get "news/index"
+
+  get "schedule_items/index"
+
+  get "geolocations/index"
+
+  get "geolocation/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
