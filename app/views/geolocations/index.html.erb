@@ -1,2 +1,12 @@
-<h1>Geolocations#index</h1>
-<p>Find me in app/views/geolocations/index.html.erb</p>
+<h1>Map</h1>
+
+<ul>
+  <% @geolocations.each do |location| %>
+    <li>
+      <%= location.name %>, <%= location.address %>, <%= location.info %>
+    </li>
+    <li>
+      <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{location.latitude}%2C#{location.longitude}" %>
+    </li>
+  <% end %>
+</ul>
