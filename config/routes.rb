@@ -11,6 +11,8 @@ Eventapp::Application.routes.draw do
 
   get "geolocations/index"
 
+  match 'twitter' => 'pages#twitter'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
