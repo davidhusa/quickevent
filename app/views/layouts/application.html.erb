@@ -16,14 +16,30 @@
 	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
   
 	<!-- Included CSS Files -->
+
 	<%= stylesheet_link_tag    "application" %>
 	
 	<!-- Included JS Files  -->
+    <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTNt517NAlXasQH2iIh2qF1zZIV9Alo3s&sensor=true">
+  </script>
 	<%= javascript_include_tag "application" %>
   
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="initialize()">
+
+  <!-- dumps out all flash messages. START  -->
+<div id="flash"> 
+  <% flash.each do |flash_type, value| %>
+    <div class="subflash" id = "flash_<%=flash_type%>">
+      <%= value %>
+    </div>
+  <% end %>
+</div>
+  <!-- dumps out all flash messages. END  -->
+
   <%= yield %>
+  
 </body>
 </html>
