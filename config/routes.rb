@@ -3,15 +3,23 @@ Eventapp::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  get "pages/show"
-
-  get "news/index"
-
-  get "schedule_items/index"
-
-  get "geolocations/index"
-
   match 'twitter' => 'pages#twitter'
+
+  match 'about' => 'pages#about'
+
+  match 'schedule' => 'schedule_items#index'
+
+  match 'news' => 'news#index'
+
+  match 'map' => 'geolocations#index'
+
+  root :to => 'pages#home'
+
+  # This makes it so all the page requests that don't match something else
+  # check themselves against all the page titles in Pages. If it matches,
+  # the user is sent to the page that matches their request.
+  # THIS MUST GO LAAAAAAAAAAAAAAAAAAAAAAAAST!!!!!!!!!
+  match ':title' => 'pages#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
