@@ -10,7 +10,9 @@ class PagesController < ApplicationController
     @hashtag = Event.first.twitter_hashtag || "#quickevents"
   end
   def home
+    @pages = Page.all
   end
   def about
+    @event_info = Event.first
   end
 end

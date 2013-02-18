@@ -1,0 +1,270 @@
+
+---
+geolocations:
+  columns:
+  - id
+  - latitude
+  - longitude
+  - address
+  - name
+  - info
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 47.710369
+    - -122.549111
+    - 16265 Agate Pt. Rd. NE, Bainbridge Island, WA
+    - my house
+    - i live here
+    - '2013-02-11 02:17:05.577058'
+    - '2013-02-11 02:17:05.577058'
+  - - 2
+    - 47.61164360000001
+    - -122.3477031
+    - 2211 elliot ave, seattle, wa
+    - old apartment
+    - I used to live here it was gross
+    - '2013-02-11 02:17:30.867666'
+    - '2013-02-18 02:11:21.237438'
+  - - 3
+    - 38.897096
+    - -77.03654499999999
+    - 1600 Pennsylvania ave, washington, dc
+    - potusa's house
+    - obama lives here
+    - '2013-02-18 02:11:39.937530'
+    - '2013-02-18 02:11:39.937530'
+
+---
+schedule_items:
+  columns:
+  - id
+  - start
+  - end
+  - name
+  - info
+  - geolocation_id
+  - location
+  - map_url
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - '2008-01-01 00:00:00.000000'
+    - '2008-01-01 02:00:00.000000'
+    - Dance Party
+    - weeeoooooooooo dance time
+    - 1
+    - My House
+    - my_house.jpeg
+    - '2013-02-18 02:06:41.382371'
+    - '2013-02-18 02:06:41.382371'
+  - - 2
+    - '2008-01-01 03:04:00.000000'
+    - '2008-01-01 08:00:00.000000'
+    - Dance party 2
+    - more dancin
+    - 2
+    - Queen Anne
+    - cool_map.png
+    - '2013-02-18 02:07:44.843757'
+    - '2013-02-18 02:07:44.843757'
+  - - 3
+    - '2008-01-02 02:00:00.000000'
+    - '2008-01-02 06:00:00.000000'
+    - Dance party day two
+    - keep dancing
+    - 1
+    - USA
+    - ffffff.bmp
+    - '2013-02-18 02:09:01.985267'
+    - '2013-02-18 02:09:01.985267'
+  - - 4
+    - '2018-02-01 00:00:00.000000'
+    - '2018-09-19 18:18:00.000000'
+    - ! 'FUTURE PARTY '
+    - laser fights
+    - 2
+    - ''
+    - ''
+    - '2013-02-18 02:09:47.071522'
+    - '2013-02-18 02:39:38.852955'
+  - - 5
+    - '2013-02-03 02:01:00.000000'
+    - '2013-02-19 17:17:00.000000'
+    - party time yet again
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
+      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
+      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
+      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
+      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
+      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
+      sollicitudin non mi.
+    - 2
+    - in town
+    - ffffffffffff.saif
+    - '2013-02-18 02:16:40.162012'
+    - '2013-02-18 02:16:40.162012'
+
+---
+news:
+  columns:
+  - id
+  - author
+  - title
+  - content
+  - is_published
+  - published_at
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - me
+    - Here's a big long title -- i just can't stop
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
+      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
+      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
+      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
+      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
+      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
+      sollicitudin non mi.
+    - true
+    - '2008-01-03 16:17:00.000000'
+    - '2013-02-18 02:13:24.123330'
+    - '2013-02-18 02:13:24.123330'
+  - - 2
+    - a guy
+    - unpublished article
+    - YOU SHOULDn"T SEE THIS!!!
+    - false
+    - '2008-02-19 17:34:00.000000'
+    - '2013-02-18 02:13:59.409034'
+    - '2013-02-18 02:13:59.409034'
+  - - 3
+    - guy
+    - the big scoop
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
+      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
+      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
+      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
+      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
+      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
+      sollicitudin non mi.
+    - false
+    - '2011-02-17 17:34:00.000000'
+    - '2013-02-18 02:15:07.521205'
+    - '2013-02-18 02:15:07.521205'
+  - - 4
+    - afo
+    - ghiapgnp
+    - sapifjfaspijLorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis
+      rhoncus faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio
+      quis augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis
+      sollicitudin dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse
+      ut mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus
+      a ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate
+      quis, sollicitudin non mi.osfnafpin
+    - true
+    - '2018-11-18 22:14:00.000000'
+    - '2013-02-18 02:15:31.942368'
+    - '2013-02-18 02:15:31.942368'
+
+---
+pages:
+  columns:
+  - id
+  - title
+  - content
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - funpage
+    - ! "class Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
+      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nend"
+    - '2013-02-13 04:24:57.844427'
+    - '2013-02-13 04:24:57.844427'
+  - - 2
+    - two-words
+    - pokeanmands
+    - '2013-02-13 04:49:45.972880'
+    - '2013-02-13 04:49:45.972880'
+
+---
+events:
+  columns:
+  - id
+  - title
+  - organizer
+  - description
+  - start
+  - end
+  - created_at
+  - updated_at
+  - twitter_hashtag
+  records: 
+  - - 1
+    - Funcon
+    - me
+    - ! "I wanna be the very best\r\nLike no one ever was\r\nTo catch them is my real
+      test\r\nTo train them is my cause\r\n\r\nI will travel across the land\r\nSearching
+      far and wide\r\nEach Pokemon to understand\r\nThe power that's inside\r\n\r\nPokemon,
+      its you and me\r\nI know it?s my destiny\r\nPokemon, oh, you're my best friend\r\nIn
+      a world we must defend\r\nPokemon, a heart so true\r\nOur courage will pull
+      us through\r\n\r\nYou teach me and I'll teach you\r\nPokemon, gotta catch 'em
+      all\r\n\r\nEvery challenge along the way\r\nWith courage I will face\r\nI will
+      battle every day\r\nTo claim my rightful place\r\n\r\nCome with me, the time
+      is right\r\nThere's no better team\r\nArm in arm we'll win the fight\r\nIt's
+      always been our dream"
+    - '2008-01-01 00:00:00.000000'
+    - '2018-12-01 10:18:00.000000'
+    - '2013-02-11 02:49:09.053601'
+    - '2013-02-18 02:50:13.552762'
+    - funtime
+
+---
+admin_users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - $2a$10$OIidKv6Uf2txwZkAEGEtIemI934BsWBnJmK.6Fjg7QFRO5cdIYiuy
+    - 
+    - 
+    - '2013-02-11 02:01:30.361215'
+    - 2
+    - '2013-02-13 04:24:38.955156'
+    - '2013-02-11 02:01:30.561554'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2013-02-11 02:00:20.787780'
+    - '2013-02-13 04:24:38.956106'
