@@ -12,6 +12,8 @@ Eventapp::Application.routes.draw do
   match 'news' => 'news#index'
 
   match 'map' => 'geolocations#index'
+      
+  match 'locationjson' => 'geolocations#location_json'
 
   root :to => 'pages#home'
 
