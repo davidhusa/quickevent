@@ -11,12 +11,13 @@
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 	
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width" />
 	
 	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
   
 	<!-- Included CSS Files -->
-
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag    "application" %>
 	
 	<!-- Included JS Files  -->
@@ -30,16 +31,20 @@
 <body onload="initialize()">
 
   <!-- dumps out all flash messages. START  -->
-<div id="flash"> 
-  <% flash.each do |flash_type, value| %>
-    <div class="subflash" id = "flash_<%=flash_type%>">
-      <%= value %>
-    </div>
-  <% end %>
-</div>
+	<div id="flash"> 
+	  <% flash.each do |flash_type, value| %>
+	    <div class="subflash" id = "flash_<%=flash_type%>">
+	      <%= value %>
+	    </div>
+	  <% end %>
+	</div>
   <!-- dumps out all flash messages. END  -->
 
   <%= yield %>
+
+  <footer class="row">
+  	<p>Copyright 2013 Quick Event App</p>
+  </footer>
   
 </body>
 </html>

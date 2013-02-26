@@ -1,5 +1,13 @@
-<h1>Map</h1>
-
+<div class="quickevent row">
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
+	<h1>Map</h1>
+	<hr>	
+</header>
 <!-- <%= content_tag "div", nil, { :id => "map_canvas", "data-lat" => @latitude, "data-long" => @longitude, :style => "width:500px; height:200px;" } %> -->
-
-<div id="map_canvas" data-lat="<%= @latitude %>" data-long="<%= @longitude %>" style="width:500px; height:200px;"></div> 
+<section class="row">
+	<div id="map_canvas" data-lat="<%= @latitude %>" data-long="<%= @longitude %>" style="width:100%; height:400px;"></div> 
+</section>

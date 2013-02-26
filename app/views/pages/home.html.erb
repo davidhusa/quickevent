@@ -1,11 +1,23 @@
-<h1>Home</h1>
-
-<%= link_to "Schedule", schedule_path %>
-<%= link_to "About", about_path %>
-<%= link_to "Twitter", twitter_path %>
-<%= link_to "Map", map_path %>
-<%= link_to "News", news_path %>
-
+<div class="quickevent row">
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1> -->
+	<h1>Home</h1>
+	<hr style="margin: 0 -15px">
+</header>
+<div id="wrapper">
+	<section class="home-nav">
+		<ul>
+			<li class="row"><%= link_to "Schedule", schedule_path %></li>
+			<li class="row"><%= link_to "About", about_path %></li>
+			<li class="row"><%= link_to "Twitter", twitter_path %></li>
+			<li class="row"><%= link_to "Map", map_path %></li>
+			<li class="row"><%= link_to "News", news_path %></li>
+		</ul>
+	</section>
+</div>
 <!--
 <% @pages.each do |page| %>
   <%= link_to page.title, "/#{page.title}" %>

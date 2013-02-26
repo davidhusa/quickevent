@@ -15,4 +15,8 @@ module ApplicationHelper
     
     return_string.join(joiner)
   end
+  def event_info
+    @event_info = Event.first
+    return @event_info.title
+  end
 end

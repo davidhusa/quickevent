@@ -1,7 +1,17 @@
-<h1>About</h1>
-<div id="title">Welcome to <%= @event_info.title %></div>
-<div>Organized by <%= @event_info.organizer %></div>
-<div>Start: <%= @event_info.start %> End: <%= @event_info.end %></div>
-<div>About the Conference: <%= @event_info.description %> </div>
-
-
+<div class="quickevent row">
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
+	<h1>About</h1>
+	<hr>	
+</header>
+<section class="row">
+	<h3>Organizer:</h3>
+	<p><%= @event_info.organizer %></p>
+	<h3>When:</h3>
+	<p>From: <%= @event_info.start %> <br>To: <%= @event_info.end %></p>
+	<h3>About the Conference:</h3>
+	<p><%= @event_info.description %></p>
+</section>

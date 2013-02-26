@@ -1,9 +1,18 @@
-<h1>Twitter</h1>
-
-<ul>
-<% Twitter.search("#{@hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
-  <li>
-    <%= status.from_user %>: <%= status.text %>
-  </li>
-<% end %>
-</ul>
+<div class="quickevent row">
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
+	<h1>Twitter</h1>
+	<hr>	
+</header>
+<section class="twitter row">
+	<ul>
+	<% Twitter.search("#{@hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
+	  <li>
+	    <%= status.from_user %>: <%= status.text %>
+	  </li>
+	<% end %>
+	</ul>
+</section>

@@ -1,6 +1,18 @@
-<h1>Schedule</h1>
-<ul>
-  <% @schedule.each do |item| %>
-    <li><%= item.start %> - <%= item.end %> | <%= item.name %> | <%= item.info %></li>
-  <% end %>
-</ul>  
+<div class="quickevent row">
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1> -->
+	<h1>Schedule</h1>
+	<hr>
+</header>
+<section class="schedule row">
+	<% @schedule.each do |item| %>
+		<div>
+		    <h3><%= item.name %></h3>
+		    <p><%= item.start %> - <%= item.end %><p>
+		    <p><%= item.info %></p>
+		</div> 
+	<% end %>
+</section>
