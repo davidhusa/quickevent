@@ -1,12 +1,17 @@
 class GeolocationsController < ApplicationController
   def index
-    if Geolocation.first
-      @latitude = Geolocation.first.latitude
-      @longitude = Geolocation.first.longitude
-    else
-      @latitude, @longitude = 0, 0
-      flash[:alert] = "No map locations loaded."
-    end
+    @locations = Geolocation.all
+    # if Geolocation.first
+    #   @latitude = Geolocation.first.latitude
+    #   @longitude = Geolocation.first.longitude
+    # else
+    #   @latitude, @longitude = 0, 0
+    #   flash[:alert] = "No map locations loaded."
+    # end
+  end
+
+  def show
+    @location = Geolocation.find(params[:id])
   end
 
   def location_json

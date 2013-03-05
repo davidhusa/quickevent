@@ -1,5 +1,5 @@
 class ScheduleItemsController < ApplicationController
   def index
-    @schedule = ScheduleItem.all
+    @schedule = ScheduleItem.order(:start)
   end
 end

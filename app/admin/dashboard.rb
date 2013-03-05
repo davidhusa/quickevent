@@ -18,11 +18,42 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
       column do
-        panel "News" do
+        panel "Published News" do
           ul do
-            News.all.map do |post|
+            News.order(:published_at).where("is_published = ?", true).map do |post|
               li link_to(post.title, admin_news_path(post))
             end
+          end
+        end
+        panel "Unpublished News" do
+          ul do
+            News.order(:created_at).where("is_published = ?", false).map do |post|
+              li link_to(post.title, admin_news_path(post))
+            end
+          end
+        end
+      end
+      column do
+        panel "Recent changes" do
+          ul do
+            (News.all + ScheduleItem.all + Page.all + Geolocation.all).sort! { |x,y|
+              y.updated_at <=> x.updated_at }.each_with_index do |thing, i|
+                case thing.class.to_s
+                when "Geolocation"
+                  @path = "geolocations"
+                when "ScheduleItem"
+                  @path = "schedule_items"
+                when "News"
+                  @path = "news"
+                when "Page"
+                  @path = "pages"
+                end
+                  
+                li link_to( thing.title, "/admin/#{@path}/#{thing.id}") +" (#{thing.class})"
+                div "#{pretty_time thing.updated_at} on #{pretty_quick_date thing.updated_at}"
+              
+                break if i>4
+              end
           end
         end
       end

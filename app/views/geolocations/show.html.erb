@@ -1,0 +1,12 @@
+<h1><%= @location.name %></h1>
+<% if @location.longitude && @location.latitude %>
+  <%= link_to(image_tag("http://maps.googleapis.com/maps/api/staticmap?" +
+          "center=#{@location.latitude},#{@location.longitude}" +
+          "&zoom=15&size=400x400" +
+          "&markers=color:red%7C#{@location.latitude},#{@location.longitude}" + 
+          "&sensor=false"),
+          "http://maps.google.com/?q=#{@location.address}") %>
+<% end %>
+<div><%= @location.address %></div>
+<div><%= simple_format @location.info %></div>
+<div><%= link_to "Directions to #{@location.name}", "https://maps.google.com/maps?saddr=current+location&daddr=#{@location.address}&target=blank" %>

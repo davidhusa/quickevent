@@ -12,6 +12,7 @@ Eventapp::Application.routes.draw do
   match 'news' => 'news#index'
 
   match 'map' => 'geolocations#index'
+  match 'map/:id' => 'geolocations#show'
       
   match 'locationjson' => 'geolocations#location_json'
 
