@@ -5,4 +5,6 @@ class News < ActiveRecord::Base
     maxlength = 32
     (self.content[0...maxlength] || "") + (self.content.length > maxlength ? "..." : "")
   end
+
+
 end

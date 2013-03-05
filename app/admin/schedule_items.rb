@@ -10,9 +10,9 @@ ActiveAdmin.register ScheduleItem do
     column :name
     column "Info", :short_info
     column :location
-    column :id
     column :created_at
     column :updated_at
+    column :id
  
     default_actions
   end

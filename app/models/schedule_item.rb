@@ -6,4 +6,5 @@ class ScheduleItem < ActiveRecord::Base
     maxlength = 32
     (self.info[0...maxlength] || "") + (self.info.length > maxlength ? "..." : "")
   end
+
 end

@@ -19,4 +19,7 @@ module ApplicationHelper
     @event_info = Event.first
     return @event_info.title
   end
+  def event_hashtag
+    Event.first.twitter_hashtag || ""
+  end
 end
