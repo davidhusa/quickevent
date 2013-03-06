@@ -3,6 +3,15 @@ ActiveAdmin.register ScheduleItem do
   menu :label => "Schedule"
 
   config.sort_order = "start_asc"
+  filter :start
+  filter :end
+  filter :name
+  filter :info
+  filter :location
+  filter :geolocation
+  filter :created_at
+  filter :updated_at
+
 
   index do
     column "Start time", :start

@@ -1,4 +1,11 @@
-<h1>Pages#show</h1>
-
-<%= @page.title %><br />
-<%= @page.content %>
+<div class="quickevent row">
+  <h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+  <h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+</div>
+<header class="row">
+  <h1><%= @page.pretty_title %></h1>
+  <hr>  
+</header>
+<section class="page row">
+  <%= simple_format @page.content %>
+</section>

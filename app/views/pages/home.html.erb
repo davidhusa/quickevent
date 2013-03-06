@@ -15,11 +15,11 @@
 			<li class="row"><%= link_to "Twitter", twitter_path %></li>
 			<li class="row"><%= link_to "Map", map_path %></li>
 			<li class="row"><%= link_to "News", news_path %></li>
+			<% if APP["pages_on"] == true %>
+				<% @pages.each do |page| %>
+	  			<li class="row"><%= link_to page.pretty_title, "/#{page.title}" %></li>
+				<% end %>
+			<% end %>
 		</ul>
 	</section>
 </div>
-<!--
-<% @pages.each do |page| %>
-  <%= link_to page.title, "/#{page.title}" %>
-<% end %>
--->
