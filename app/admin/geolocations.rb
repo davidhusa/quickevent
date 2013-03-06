@@ -4,6 +4,7 @@ ActiveAdmin.register Geolocation do
   index do
     column :name
     column "Info", :short_info
+    column :address
     column :latitude
     column :longitude
     column :created_at

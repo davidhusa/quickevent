@@ -19,6 +19,7 @@ ActiveAdmin.register ScheduleItem do
     column :name
     column "Info", :short_info
     column :location
+    column :geolocation
     column :created_at
     column :updated_at
     column :id
@@ -30,7 +31,8 @@ ActiveAdmin.register ScheduleItem do
     f.inputs "Information" do
       f.input :name
       f.input :info, :label => "Description"
-      f.input :geolocation, :label => "Location"
+      f.input :location
+      f.input :geolocation
     end
     f.inputs "Time" do
       f.input :start
@@ -58,13 +60,7 @@ ActiveAdmin.register ScheduleItem do
 
     attributes_table do
       row :location
-      row "Map location" do
-        image_tag "http://maps.googleapis.com/maps/api/staticmap?" +
-          "center=#{item.geolocation.latitude},#{item.geolocation.longitude}" +
-          "&zoom=15&size=400x400" +
-          "&markers=color:red%7C#{item.geolocation.latitude},#{item.geolocation.longitude}" + 
-          "&sensor=false" if item.geolocation.longitude && item.geolocation.latitude
-      end
+      row :geolocation
     end
 
 

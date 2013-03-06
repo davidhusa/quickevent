@@ -3,6 +3,7 @@ class Geolocation < ActiveRecord::Base
   after_validation :geocode, :if => :address_changed?
   validates :name, :presence => true
   validates :address, :presence => true
+  has_many :schedule_item, :dependent => :nullify
 
   def short_info
     maxlength = 32

@@ -11,30 +11,30 @@ geolocations:
   - created_at
   - updated_at
   records: 
-  - - 1
-    - 47.710369
-    - -122.549111
-    - 16265 Agate Pt. Rd. NE, Bainbridge Island, WA
-    - my house
-    - i live here
-    - '2013-02-11 02:17:05.577058'
-    - '2013-02-11 02:17:05.577058'
-  - - 2
-    - 47.61164360000001
-    - -122.3477031
-    - 2211 elliot ave, seattle, wa
-    - old apartment
-    - I used to live here it was gross
-    - '2013-02-11 02:17:30.867666'
-    - '2013-02-18 02:11:21.237438'
-  - - 3
-    - 38.897096
-    - -77.03654499999999
-    - 1600 Pennsylvania ave, washington, dc
-    - potusa's house
-    - obama lives here
-    - '2013-02-18 02:11:39.937530'
-    - '2013-02-18 02:11:39.937530'
+  - - 5
+    - 47.611389
+    - -122.33168
+    - 800 Convention Pl, Seattle, WA
+    - Convention Center
+    - The Washington State Convention Center. A large building with a skybridge.
+    - '2013-03-06 02:42:26.603285'
+    - '2013-03-06 03:01:38.667064'
+  - - 7
+    - 47.612516
+    - -122.3354244
+    - ! '600 Pine Street #401 Seattle, WA'
+    - The Brewery
+    - Brews
+    - '2013-03-06 02:45:09.476743'
+    - '2013-03-06 03:04:57.406020'
+  - - 8
+    - 47.61347929999999
+    - -122.3317273
+    - 911 Pine St, Seattle, Washington
+    - Paramount Theatre
+    - It's a "theatre" not a "theater."
+    - '2013-03-06 02:51:03.444447'
+    - '2013-03-06 03:00:54.751542'
 
 ---
 schedule_items:
@@ -50,62 +50,29 @@ schedule_items:
   - created_at
   - updated_at
   records: 
-  - - 1
-    - '2008-01-01 00:00:00.000000'
-    - '2008-01-01 02:00:00.000000'
-    - Dance Party
-    - weeeoooooooooo dance time
-    - 1
-    - My House
-    - my_house.jpeg
-    - '2013-02-18 02:06:41.382371'
-    - '2013-02-18 02:06:41.382371'
-  - - 2
-    - '2008-01-01 03:04:00.000000'
-    - '2008-01-01 08:00:00.000000'
-    - Dance party 2
-    - more dancin
-    - 2
-    - Queen Anne
-    - cool_map.png
-    - '2013-02-18 02:07:44.843757'
-    - '2013-02-18 02:07:44.843757'
-  - - 3
-    - '2008-01-02 02:00:00.000000'
-    - '2008-01-02 06:00:00.000000'
-    - Dance party day two
-    - keep dancing
-    - 1
-    - USA
-    - ffffff.bmp
-    - '2013-02-18 02:09:01.985267'
-    - '2013-02-18 02:09:01.985267'
-  - - 4
-    - '2018-02-01 00:00:00.000000'
-    - '2018-09-19 18:18:00.000000'
-    - ! 'FUTURE PARTY '
-    - laser fights
-    - 2
-    - ''
-    - ''
-    - '2013-02-18 02:09:47.071522'
-    - '2013-02-18 02:39:38.852955'
-  - - 5
-    - '2013-02-03 02:01:00.000000'
-    - '2013-02-19 17:17:00.000000'
-    - party time yet again
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
-      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
-      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
-      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
-      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
-      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
-      sollicitudin non mi.
-    - 2
-    - in town
-    - ffffffffffff.saif
-    - '2013-02-18 02:16:40.162012'
-    - '2013-02-18 02:16:40.162012'
+  - - 7
+    - '2013-12-13 16:00:00.000000'
+    - '2013-12-13 17:00:00.000000'
+    - Welcome Keynote Speech Featuring Gandalf the Gray
+    - ! 'We kick of this year''s Wizcon with a special presentation from the wizard
+      Gandalf. His talk is titled "A Wizard is Never Late: Arriving Precisely When
+      You Intend To."'
+    - 8
+    - Main Hall
+    - 
+    - '2013-03-06 03:15:16.770301'
+    - '2013-03-06 03:15:16.770301'
+  - - 8
+    - '2013-12-13 18:00:00.000000'
+    - '2013-12-14 02:00:00.000000'
+    - Exhibit Hall Open
+    - The exhibit hall features booths from more than 9000 reagent vendors, magic
+      item collectors, special guest mages and other fantastical wizbangs and kazoodles.
+    - 5
+    - The 3rd Floor Skybridge
+    - 
+    - '2013-03-06 03:18:37.927589'
+    - '2013-03-06 03:18:37.927589'
 
 ---
 news:
@@ -119,56 +86,31 @@ news:
   - created_at
   - updated_at
   records: 
-  - - 1
-    - me
-    - Here's a big long title -- i just can't stop
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
-      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
-      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
-      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
-      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
-      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
-      sollicitudin non mi.
+  - - 8
+    - Gandalf
+    - Wizcon coming soon!
+    - ''
     - true
-    - '2008-01-03 16:17:00.000000'
-    - '2013-02-18 02:13:24.123330'
-    - '2013-02-18 02:13:24.123330'
-  - - 2
-    - a guy
-    - unpublished article
-    - YOU SHOULDn"T SEE THIS!!!
-    - false
-    - '2008-02-19 17:34:00.000000'
-    - '2013-02-18 02:13:59.409034'
-    - '2013-02-18 02:13:59.409034'
-  - - 3
-    - guy
-    - the big scoop
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis rhoncus
-      faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio quis
-      augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis sollicitudin
-      dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse ut
-      mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus a
-      ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate quis,
-      sollicitudin non mi.
-    - false
-    - '2011-02-17 17:34:00.000000'
-    - '2013-02-18 02:15:07.521205'
-    - '2013-02-18 02:15:07.521205'
-  - - 4
-    - afo
-    - ghiapgnp
-    - sapifjfaspijLorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis
-      rhoncus faucibus. Aenean sagittis quam id erat porta lobortis. Ut blandit odio
-      quis augue euismod eget porta quam tincidunt. Quisque eget enim diam, mollis
-      sollicitudin dolor. Nullam pulvinar lectus vitae lacus vehicula convallis. Suspendisse
-      ut mauris ut purus varius auctor vitae et metus. Vivamus metus eros, dapibus
-      a ultricies sed, sagittis vitae risus. Duis eros leo, posuere sed vulputate
-      quis, sollicitudin non mi.osfnafpin
+    - '2013-03-06 02:52:42.727382'
+    - '2013-03-06 02:52:42.727979'
+    - '2013-03-06 02:52:42.727979'
+  - - 9
+    - Ser Dronicus III Esq.
+    - Conjurers now invited
+    - Previously banned for mischief and tomfoolery, conjurers are once again welcome
+      to Wizcon. Don't *$#@ up like last time.
     - true
-    - '2018-11-18 22:14:00.000000'
-    - '2013-02-18 02:15:31.942368'
-    - '2013-02-18 02:15:31.942368'
+    - '2013-03-06 03:09:39.102091'
+    - '2013-03-06 03:09:39.102687'
+    - '2013-03-06 03:09:55.482309'
+  - - 10
+    - fffffff
+    - draft
+    - ! "bonoinpoiasfjapoifapoifpoin\r\nYou shouldn't see this."
+    - false
+    - 
+    - '2013-03-06 03:10:41.704909'
+    - '2013-03-06 03:10:41.704909'
 
 ---
 pages:
@@ -179,32 +121,12 @@ pages:
   - created_at
   - updated_at
   records: 
-  - - 1
-    - funpage
-    - ! "class Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nendclass
-      Stuff < ActiveResource::Base\r\n  self.site = \"http://localhost:3000\"\r\nend"
-    - '2013-02-13 04:24:57.844427'
-    - '2013-02-13 04:24:57.844427'
-  - - 2
-    - two-words
-    - pokeanmands
-    - '2013-02-13 04:49:45.972880'
-    - '2013-02-13 04:49:45.972880'
+  - - 8
+    - dress-code
+    - Make sure to wear your finest Wizard robes; other enchanted clothes acceptable.
+      No one wearing chain-mail, full plate or leather armor will be admitted.
+    - '2013-03-05 23:40:23.701824'
+    - '2013-03-06 02:54:16.779204'
 
 ---
 events:
@@ -220,8 +142,8 @@ events:
   - twitter_hashtag
   records: 
   - - 1
-    - Funcon
-    - me
+    - Wizcon
+    - Hogwarts Community College
     - ! "I wanna be the very best\r\nLike no one ever was\r\nTo catch them is my real
       test\r\nTo train them is my cause\r\n\r\nI will travel across the land\r\nSearching
       far and wide\r\nEach Pokemon to understand\r\nThe power that's inside\r\n\r\nPokemon,
@@ -232,11 +154,11 @@ events:
       battle every day\r\nTo claim my rightful place\r\n\r\nCome with me, the time
       is right\r\nThere's no better team\r\nArm in arm we'll win the fight\r\nIt's
       always been our dream"
-    - '2008-01-01 00:00:00.000000'
-    - '2018-12-01 10:18:00.000000'
+    - '2013-12-13 16:00:00.000000'
+    - '2013-12-14 04:00:00.000000'
     - '2013-02-11 02:49:09.053601'
-    - '2013-02-18 02:50:13.552762'
-    - funtime
+    - '2013-03-06 02:39:39.081303'
+    - wizardry
 
 ---
 admin_users:
@@ -260,11 +182,99 @@ admin_users:
     - $2a$10$OIidKv6Uf2txwZkAEGEtIemI934BsWBnJmK.6Fjg7QFRO5cdIYiuy
     - 
     - 
-    - '2013-02-11 02:01:30.361215'
-    - 2
-    - '2013-02-13 04:24:38.955156'
-    - '2013-02-11 02:01:30.561554'
+    - 
+    - 7
+    - '2013-03-01 22:04:57.380259'
+    - '2013-02-28 22:21:25.724423'
     - 127.0.0.1
     - 127.0.0.1
     - '2013-02-11 02:00:20.787780'
-    - '2013-02-13 04:24:38.956106'
+    - '2013-03-01 22:04:57.382142'
+  - - 2
+    - ff@lol.com
+    - $2a$10$5Zgt0Wz8evIjHEV3C/LKou9TIb1Wn5SCLaMfk.yCCXw/l7q4TsVC6
+    - 
+    - 
+    - 
+    - 1
+    - '2013-02-27 00:43:07.991968'
+    - '2013-02-27 00:43:07.991968'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2013-02-27 00:42:59.450693'
+    - '2013-02-27 00:43:07.993094'
+
+---
+twitter_users:
+  columns:
+  - id
+  - uid
+  - created_at
+  - updated_at
+  - name
+  - token
+  - secret
+  records: 
+  - - 1
+    - uid
+    - '2013-02-24 23:48:52.090601'
+    - '2013-02-24 23:48:52.090601'
+    - 
+    - 
+    - 
+  - - 2
+    - uid
+    - '2013-02-24 23:57:49.289128'
+    - '2013-02-24 23:57:49.289128'
+    - 
+    - 
+    - 
+  - - 3
+    - uid
+    - '2013-02-24 23:57:57.845056'
+    - '2013-02-24 23:57:57.845056'
+    - 
+    - 
+    - 
+  - - 4
+    - uid
+    - '2013-02-24 23:58:57.936586'
+    - '2013-02-24 23:58:57.936586'
+    - 
+    - 
+    - 
+  - - 5
+    - uid
+    - '2013-02-24 23:59:30.445856'
+    - '2013-02-24 23:59:30.445856'
+    - 
+    - 
+    - 
+  - - 6
+    - uid
+    - '2013-02-25 00:00:39.819786'
+    - '2013-02-25 00:00:39.819786'
+    - 
+    - 
+    - 
+  - - 7
+    - uid
+    - '2013-02-25 00:01:12.451376'
+    - '2013-02-25 00:01:12.451376'
+    - 
+    - 
+    - 
+  - - 8
+    - uid
+    - '2013-02-25 00:04:39.461362'
+    - '2013-02-25 00:04:39.461362'
+    - 
+    - 
+    - 
+  - - 11
+    - '32696956'
+    - '2013-02-25 01:06:41.572174'
+    - '2013-02-25 01:06:41.572174'
+    - QQQQO
+    - 54CgtQFlFGjsqpO0iS9YPrAErx8mJVRnTe3KVrPTw
+    - rwPE4L37DClU5NO5DYXMfrfj6BwrUttq9HkmFJE
