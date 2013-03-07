@@ -22,7 +22,7 @@ module ApplicationHelper
     # else
     # end
   end
-  def event_hashtag
-    Event.first.twitter_hashtag || ""
-  end
+  # def event_hashtag
+  #   Event.first.twitter_hashtag || ""
+  # end
 end
