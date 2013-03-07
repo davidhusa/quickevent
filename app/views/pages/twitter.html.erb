@@ -1,6 +1,6 @@
 <%= content_tag "script", nil, { :type => "text/javascript", :src => "//platform.twitter.com/widgets.js" } %>
 <div class="quickevent row">
-	<h1 class="title six mobile-two columns"><a href="/"><%= event_info %></a></h1>
+	<h1 class="title six mobile-two columns"><a href="/"><%= event_info.title %></a></h1>
 	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
 </div>
 
@@ -12,18 +12,18 @@
 </header>
 
 <p><!-- Here's the tweet button -->
-	<%=content_tag "a", "Tweet", :href =>"https://twitter.com/intent/tweet?hashtags=#{event_hashtag}"%>
+	<%=content_tag "a", "Tweet", :href =>"https://twitter.com/intent/tweet?hashtags=#{event_info.twitter_hashtag}"%>
 </p> <!-- END Tweet button -->
 
 <section class="twitter row">
 	<ul>
-	<% Twitter.search("#{@hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
+	<% Twitter.search("#{event_info.twitter_hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
 	  <li>
 	    <%= content_tag "strong", status.from_user %>: <%= status.text %>
 			
 
 			<br />
-	    <%= content_tag "a", "Reply", :href => "https://twitter.com/intent/tweet?in_reply_to=#{status.id}&hashtags=#{event_hashtag}" %> |
+	    <%= content_tag "a", "Reply", :href => "https://twitter.com/intent/tweet?in_reply_to=#{status.id}&hashtags=#{event_info.twitter_hashtag}" %> |
 	    <%= content_tag "a", "Retweet", :href => "https://twitter.com/intent/retweet?tweet_id=#{status.id}" %> |
 	    <%= content_tag "a", "Favorite", :href => "https://twitter.com/intent/favorite?tweet_id=#{status.id}" %>
 	  </li>

@@ -7,7 +7,7 @@ class PagesController < ApplicationController
     end
   end
   def twitter
-    @hashtag = "##{Event.first.twitter_hashtag}" || "#quickevents"
+    # @hashtag = "##{Event.first.twitter_hashtag}" || "#quickevents"
   end
   def home
     @pages = Page.all
