@@ -5,11 +5,15 @@
 <header class="row">
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
 	<h1>Locations</h1>
-	<hr>	
+	<hr style="margin: 0 -15px">
 </header>
 
-<section class="row">
-  <% @locations.each do |location| %>
-    <%= link_to location.name, "/map/#{location.id}" %>
-  <% end %>
-</section>
+<div id="wrapper">
+	<section class="home-nav">
+		<ul>
+		<% @locations.each do |location| %>
+			<li class="row"><%= link_to location.name, "/map/#{location.id}" %></li>
+		<% end %>
+		</ul>
+	</section>
+</div>

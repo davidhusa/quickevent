@@ -1,6 +1,6 @@
-$green: #15a346;
-$darkGreen: #075b23;
-$darkerGreen: #032b11;
+$green: #157fa3;
+$darkGreen: #07485d;
+$darkerGreen: #03232d;
 $yellow: #ffea00;
 $white: #fff;
 $black: #000;
@@ -84,8 +84,6 @@ header {
 	}
 		a {
 			color: $white;
-			display: block;
-			/*text-align: center;*/
 			padding: 10px 0;	
 			font-size: 1.5em;	
 			&:hover { color: $yellow; text-decoration: none; }
@@ -110,9 +108,19 @@ header {
 		border-bottom: 2px solid $gray;
 	}
 }
-/*footer.row { margin: 30px 0;}*/
+.locations {
+	a {
+		margin: 10px 0;
+	}
+}
+.location {
+	h4 {
+		font-size: 1.25em;
+	}
+
+}
 footer {
-		p {
-			font-size: 0.75em;
-		}
+	p {
+		font-size: 0.75em;
+	}
 }

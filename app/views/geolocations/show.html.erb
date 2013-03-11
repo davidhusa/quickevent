@@ -8,16 +8,20 @@
   <hr>  
 </header>
 
-<section class="location row">
-<% if @location.longitude && @location.latitude %>
-  <%= link_to(image_tag("http://maps.googleapis.com/maps/api/staticmap?" +
-          "center=#{@location.latitude},#{@location.longitude}" +
-          "&zoom=15&size=400x400" +
-          "&markers=color:red%7C#{@location.latitude},#{@location.longitude}" + 
-          "&sensor=false"),
-          "http://maps.google.com/?q=#{@location.address}") %>
-<% end %>
-<div><%= @location.address %></div>
-<div><%= simple_format @location.info %></div>
-<div><%= link_to "Directions to #{@location.name}", "https://maps.google.com/maps?saddr=current+location&daddr=#{@location.address}&target=blank" %>
+<section class="location row" style="padding-bottom: 20px;">
+  <% if @location.longitude && @location.latitude %>
+    <%= link_to(image_tag("http://maps.googleapis.com/maps/api/staticmap?" +
+            "center=#{@location.latitude},#{@location.longitude}" +
+            "&zoom=15&size=500x200" +
+            "&markers=color:red%7C#{@location.latitude},#{@location.longitude}" + 
+            "&sensor=false"),
+            "http://maps.google.com/?q=#{@location.address}") %>
+  <% end %>
+  <h3>Address:</h3>
+  <p class="address"><%= @location.address %></p>
+  <h3>Infomation:</h3>
+  <p class="info"><%= simple_format @location.info %></p>
+  <h3>Directions to:</h3>
+  <p class="direction"><%= link_to "#{@location.name}", "https://maps.google.com/maps?saddr=current+location&daddr=#{@location.address}&target=blank", :class => "small button secondary round" %></p>
+  <hr style="border-top: none;">
 </section>
