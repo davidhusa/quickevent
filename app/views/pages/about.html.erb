@@ -10,8 +10,7 @@
 <section class="row" style="padding-bottom: 20px;">
 	<h3>Organizer:</h3>
 	<p><%= @event_info.organizer %></p>
-	<h3>When:</h3>
-	<p>From: <%= @event_info.start %> <br>To: <%= @event_info.end %></p>
+	<h3>When:</h3>From: <%= pretty_time(@event_info.start) %> on <%= pretty_date(@event_info.start) %>   <br>To: <%= pretty_time(@event_info.end) %> on <%= pretty_date(@event_info.end) %></p>
 	<h3>About the Conference:</h3>
 	<p><%= @event_info.description %></p>
 	<hr style="border-top: none;">
