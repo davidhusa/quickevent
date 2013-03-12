@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe Event do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let!(:event) { Factory(:event) }
+
+  it 'should shorten a description through short_description' do
+    event.description = "1"*100
+    event.description.length.should == 100
+    event.short_description.length.should == 35
+  end
+
 end
