@@ -61,5 +61,6 @@ module Eventapp
 
     #for heroku
     config.assets.initialize_on_precompile = false
+    #config.assets.compile = true
   end
 end
