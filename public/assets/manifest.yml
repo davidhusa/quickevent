@@ -3,8 +3,12 @@ rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 wizard.png: wizard-627a6b6d05e3cc65426c79ff057b02ee.png
 wizard/index.png: wizard-627a6b6d05e3cc65426c79ff057b02ee.png
+active_admin.js: active_admin-15e149bd4566a2318012da476befd659.js
+active_admin/index.js: active_admin-15e149bd4566a2318012da476befd659.js
 application.js: application-beec81e3d852bdca918b85d86b4629e8.js
 application/index.js: application-beec81e3d852bdca918b85d86b4629e8.js
+active_admin.css: active_admin-f58fc98e42733be6473403cf53156e11.css
+active_admin/index.css: active_admin-f58fc98e42733be6473403cf53156e11.css
 application.css: application-72efb5c65e474ab86bf62376dfed9c62.css
 application/index.css: application-72efb5c65e474ab86bf62376dfed9c62.css
 foundation/orbit/bullets.jpg: foundation/orbit/bullets-4fea3b6075ffb7211bfaea707aed9180.jpg

@@ -46,7 +46,7 @@ ActiveAdmin.register News do
     f.inputs "Content" do
       f.input :content
     end
-    f.buttons
+    f.actions
   end
 
 end

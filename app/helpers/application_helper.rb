@@ -13,7 +13,7 @@ module ApplicationHelper
     return_string << date.strftime("%e")
     return_string << date.strftime("%y")
     
-    return_string.join(joiner)
+    return_string.join(joiner).gsub(" ", "")
   end
   def event_info
     @event_info = Event.first || Event.new(:title => "Untitled Event", :twitter_hashtag => "events")
