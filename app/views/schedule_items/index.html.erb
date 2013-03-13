@@ -13,7 +13,11 @@
 		    <h3><%= item.name %></h3>
 		    <p><%= pretty_time(item.start) %> on <%= pretty_quick_date(item.start) %> —
 		       <%= pretty_time(item.end) %> on <%= pretty_quick_date(item.end) %></p>
+
 		    <p><%= item.info %></p>
+		    <h4>Location:</h4>
+		    <p><%=content_tag "a", "#{item.geolocation.name}", :class => "small button round secondary", :href =>"map/#{item.geolocation.id}"%></p>
+
 		</div> 
 	<% end %>
 </section>

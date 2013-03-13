@@ -18,7 +18,7 @@
 
 <section class="twitter row">
 	<ul>
-	<% Twitter.search("#{event_info.twitter_hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
+	<% Twitter.search("##{event_info.twitter_hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
 	  <li>
 	    <%= content_tag "strong", status.from_user %>: <%= status.text %>
 			<br />

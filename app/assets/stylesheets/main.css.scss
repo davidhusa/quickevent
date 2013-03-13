@@ -81,10 +81,12 @@ header {
 		list-style: none;
 		border-bottom: 2px solid $gray;
 		background: $darkGreen;
+		
 	}
 		a {
 			color: $white;
-			padding: 10px 0;	
+			display: block;
+			padding: 12px 0;	
 			font-size: 1.5em;	
 			&:hover { color: $yellow; text-decoration: none; }
 		}	
