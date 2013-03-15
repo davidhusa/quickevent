@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-gem 'activeadmin'
+gem 'activeadmin', '0.5.1'
 gem "meta_search",    '>= 1.1.0.pre'
-gem 'geocoder'
-gem 'twitter'
-gem 'yaml_db'
+gem 'geocoder', '1.1.6'
+gem 'twitter', '4.5.0'
+gem 'yaml_db', '0.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,8 +23,8 @@ group :test do
 end
 
 group :production do
-  gem 'thin'
-  gem 'pg'
+  gem 'thin', '1.5.0'
+  gem 'pg', '0.14.1'
 end
 
 # Gems used only for assets and not required
@@ -37,11 +37,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'compass-rails'
-  gem 'zurb-foundation'
+  gem 'compass-rails', '1.0.3'
+  gem 'zurb-foundation', '3.2.4'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

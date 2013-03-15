@@ -231,23 +231,23 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (= 0.5.1)
   capybara (= 2.0.2)
   coffee-rails (~> 3.2.1)
-  compass-rails
+  compass-rails (= 1.0.3)
   factory_girl (= 2.6.4)
-  geocoder
-  jquery-rails
+  geocoder (= 1.1.6)
+  jquery-rails (= 2.2.1)
   launchy (~> 2.2.0)
   meta_search (>= 1.1.0.pre)
-  pg
+  pg (= 0.14.1)
   pry-rails
   rails (= 3.2.11)
   rspec-rails (~> 2.11)
   sass-rails (~> 3.2.3)
   sqlite3
-  thin
-  twitter
+  thin (= 1.5.0)
+  twitter (= 4.5.0)
   uglifier (>= 1.0.3)
-  yaml_db
-  zurb-foundation
+  yaml_db (= 0.2.3)
+  zurb-foundation (= 3.2.4)
