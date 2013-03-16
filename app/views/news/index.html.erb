@@ -4,6 +4,7 @@
 </div>
 <header class="row">
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
+  <% content_for(:title) { "#{event_info.title} News" } %>
 	<h1>News</h1>
 	<hr>	
 </header>

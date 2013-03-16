@@ -50,7 +50,4 @@ ActiveAdmin.register Geolocation do
     active_admin_comments
   end
 
-
-
-
 end

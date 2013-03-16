@@ -3,6 +3,7 @@
   <h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
 </div>
 <header class="row">
+  <% content_for(:title) { "#{event_info.title} #{@page.pretty_title}" } %>
   <h1><%= @page.pretty_title %></h1>
   <hr>  
 </header>

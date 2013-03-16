@@ -6,12 +6,14 @@
 
 
 <header class="row">
+	<% content_for(:title) { "Discuss #{event_info.title} on ##{event_info.twitter_hashtag}" } %>
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
-	<h1>#wizcon</h1>
+	<h1>
+		Discuss <%=event_info.title%> on <%= link_to "##{event_info.twitter_hashtag}", twitter_path %>
+	</h1>
 <!-- Here's the tweet button -->
 	<%=content_tag "a", "Tweet", :class => "small button round secondary", :href =>"https://twitter.com/intent/tweet?hashtags=#{event_info.twitter_hashtag}"%>
 <!-- END Tweet button -->
-
 	<hr>
 
 </header>
