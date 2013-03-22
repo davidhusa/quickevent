@@ -5,20 +5,27 @@
 <header class="row">
 	<% content_for(:title) { "#{event_info.title} Schedule" } %>
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1> -->
-	<h1>Schedule</h1>
+	<h1 class="title">Schedule</h1>
 	<hr>
 </header>
 <section class="schedule row" style="padding-bottom: 20px;">
 	<% @schedule.each do |item| %>
 		<div>
-		    <h3><%= item.name %></h3>
-		    <p><%= pretty_time(item.start) %> on <%= pretty_quick_date(item.start) %> —
-		       <%= pretty_time(item.end) %> on <%= pretty_quick_date(item.end) %></p>
+				<% if item.class == ScheduleItem %>
+			    <h3><%= item.name %></h3>
+			    <p>
+			    	<%= pretty_time(item.start) %> to <%= pretty_time(item.end) %>
+			    		<% if item.end.to_date != item.start.to_date %>
+			    			on <%= pretty_quick_date(item.end) %>
+			    		<% end %>
+			    </p>
 
-		    <p><%= item.info %></p>
-		    <h4>Location:</h4>
-		    <p><%=content_tag "a", "#{item.geolocation.name}", :class => "small button round secondary", :href =>"map/#{item.geolocation.id}"%></p>
-
+			    <p><%= item.info %></p>
+			    <h4>Location:</h4>
+			    <p><%=content_tag "a", "#{item.geolocation.name}", :class => "small button round secondary", :href =>"map/#{item.geolocation.id}"%></p>
+		    <% elsif item.class == ActiveSupport::TimeWithZone %>
+      		<h2><%=pretty_date(item)%></h2>
+				<% end %> 
 		</div> 
 	<% end %>
 </section>

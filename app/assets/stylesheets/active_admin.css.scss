@@ -1,3 +1,18 @@
+$blue: #157fa3;
+$darkBlue: #07485d;
+$darkerBlue: #03232d;
+
+$primary-color: $darkBlue;
+$secondary-color: $darkerBlue;
+$current-menu-item-background: $blue;
+$hover-menu-item-background: lighten($blue, 12%);
+$table-stripe-color: lighten($blue, 57%); 
+$table-selected-color: $darkerBlue;
+
+span.action_item {
+  text-align: left;
+}
+
 // SASS variable overrides must be declared before loading up Active Admin's styles.
 //
 // To view the variables that Active Admin provides, take a look at

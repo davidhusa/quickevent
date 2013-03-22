@@ -11,9 +11,13 @@
 <section class="news row" style="padding-bottom: 20px;">
   <% @news.each do |item| %>
   	<div>
-	    <h3><%= item.title %></h3> 
-	    <p><%= "#{pretty_time(item.published_at)} on #{pretty_quick_date(item.published_at)}" || item.created_at %></p>
-	    <p><%= item.content %></p>
+      <% if item.class == News %>
+  	    <h3><%= item.title %></h3> 
+  	    <p><%= "#{pretty_time(item.published_at)}" || item.created_at %></p>
+  	    <p><%= item.content %></p>
+      <% elsif item.class == ActiveSupport::TimeWithZone %>
+       <h2><%=pretty_date(item)%></h2>
+      <% end %>
     </div>
   <% end %>
 </section>
