@@ -15,7 +15,4 @@ class ScheduleItem < ActiveRecord::Base
   def title
     name
   end
-
-  
-  
 end

@@ -4,6 +4,7 @@ class Geolocation < ActiveRecord::Base
   validates :name, :presence => true
   validates :address, :presence => true
   has_many :schedule_item, :dependent => :nullify
+  belongs_to :event
 
   def short_info
     maxlength = 32

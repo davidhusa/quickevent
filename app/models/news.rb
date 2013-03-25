@@ -2,6 +2,7 @@ class News < ActiveRecord::Base
   attr_accessible :author, :content, :is_published, :published_at, :title
   before_save :check_for_publish
   validates :title, :presence => true
+  belongs_to :event
   
 
   def short_content

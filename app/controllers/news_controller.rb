@@ -1,6 +1,6 @@
 class NewsController < ApplicationController
   def index
-    raw_news = News.order(:published_at).where("is_published = ?", true).reverse || []
+    raw_news = News.where("event_id = ?", params[:event_id]).order(:published_at).where("is_published = ?", true).reverse || []
 
     @news = Array.new
     last_date = nil

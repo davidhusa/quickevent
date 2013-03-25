@@ -1,7 +1,3 @@
-<div class="quickevent row">
-	<h1 class="title six mobile-two columns"><a href="/"><%= event_info.title %></a></h1>
-	<h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
-</div>
 <img src="/assets/wizard.png" style="margin-bottom: -3px; width: 100%;">
 
 <header class="row">
@@ -20,7 +16,7 @@
 			<li class="row"><%= link_to "News", news_path %></li>
 			<% if APP["pages_on"] == true %>
 				<% @pages.each do |page| %>
-	  			<li class="row"><%= link_to page.pretty_title, "/#{page.title}" %></li>
+	  			<li class="row"><%= link_to page.pretty_title, "/#{params[:event_id]}/#{page.title}" %></li>
 				<% end %>
 			<% end %>
 		</ul>

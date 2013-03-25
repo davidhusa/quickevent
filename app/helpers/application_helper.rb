@@ -16,11 +16,7 @@ module ApplicationHelper
     return_string.join(joiner).gsub(" ", "")
   end
   def event_info
-    @event_info = Event.first || Event.new(:title => "Untitled Event", :twitter_hashtag => "events")
-    # if @event_info == "Empty"
-    #   return "Untitled Event"
-    # else
-    # end
+    @event_info = Event.find(params[:event_id]) || Event.new(:title => "Untitled Event", :twitter_hashtag => "events")
   end
   # def event_hashtag
   #   Event.first.twitter_hashtag || ""

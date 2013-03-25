@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def show
-    @page = Page.find_by_title(params[:title])
+    @page = Page.where("event_id = ?", params[:event_id]).find_by_title(params[:title])
     if @page == nil
       flash[:notice] = "Page not found"
       redirect_to root_path
@@ -10,9 +10,10 @@ class PagesController < ApplicationController
     # @hashtag = "##{Event.first.twitter_hashtag}" || "#quickevents"
   end
   def home
-    @pages = Page.all
+    #@pages = Page.where("event_id = ?", params[:event_id]).all
+    @pages = Page.where("event_id = ?", params[:event_id]).all
   end
   def about
-    @event_info = Event.first
+    @event_info = Event.find(params[:event_id])
   end
 end
