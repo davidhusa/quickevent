@@ -11,7 +11,9 @@
 		<ul>
 			<li class="row"><%= link_to "Schedule", schedule_path %></li>
 			<li class="row"><%= link_to "About", about_path %></li>
-			<li class="row"><%= link_to "Twitter", twitter_path %></li>
+			<% if event_info.twitter_hashtag %>
+				<li class="row"><%= link_to "Twitter", twitter_path %></li>
+			<% end %>
 			<li class="row"><%= link_to "Map", map_path %></li>
 			<li class="row"><%= link_to "News", news_path %></li>
 			<% if APP["pages_on"] == true %>

@@ -1,6 +1,6 @@
 class ScheduleItemsController < ApplicationController
   def index
-    raw_schedule = ScheduleItem.where("event_id = ?", params[:event_id]).order(:start) || []
+    raw_schedule = ScheduleItem.where("event_id = ?", event_info.id).order(:start) || []
 
     @schedule = Array.new
     last_date = nil

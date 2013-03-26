@@ -1,6 +1,6 @@
 class GeolocationsController < ApplicationController
   def index
-    @locations = Geolocation.where("event_id = ?", params[:event_id]).all
+    @locations = Geolocation.where("event_id = ?", event_info.id).all
     # if Geolocation.first
     #   @latitude = Geolocation.first.latitude
     #   @longitude = Geolocation.first.longitude
@@ -11,11 +11,11 @@ class GeolocationsController < ApplicationController
   end
 
   def show
-    @location = Geolocation.where("event_id = ?", params[:event_id]).find(params[:id])
+    @location = Geolocation.where("event_id = ?", event_info.id).find(params[:id])
   end
 
   def location_json
-    @all_info = Geolocation.where("event_id = ?", params[:event_id]).all
+    @all_info = Geolocation.where("event_id = ?", event_info.id).all
 
     @all_locations = []
 

@@ -4,7 +4,7 @@
 	<% content_for(:title) { "Discuss #{event_info.title} on ##{event_info.twitter_hashtag}" } %>
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
 	<h1>
-		Discuss <%=event_info.title%> on <%= link_to "##{event_info.twitter_hashtag}", twitter_path %>
+		Discuss <%=event_info.title%> on <%= link_to "##{event_info.twitter_hashtag || 'event'}", twitter_path %>
 	</h1>
 <!-- Here's the tweet button -->
 	<%=content_tag "a", "Tweet", :class => "small button round secondary", :href =>"https://twitter.com/intent/tweet?hashtags=#{event_info.twitter_hashtag}"%>
@@ -15,7 +15,7 @@
 
 <section class="twitter row">
 	<ul>
-	<% Twitter.search("##{event_info.twitter_hashtag}", :count => 10, :result_type => "recent").results.map do |status| %>
+	<% Twitter.search("##{event_info.twitter_hashtag || 'event'}", :count => 10, :result_type => "recent").results.map do |status| %>
 	  <li>
 	    <%= content_tag "strong", status.from_user %>: <%= status.text %>
 			<br />

@@ -1,5 +1,5 @@
 class News < ActiveRecord::Base
-  attr_accessible :author, :content, :is_published, :published_at, :title
+  attr_accessible :author, :content, :is_published, :published_at, :title, :event_id
   before_save :check_for_publish
   validates :title, :presence => true
   belongs_to :event

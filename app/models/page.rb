@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :content, :title
+  attr_accessible :content, :title, :event_id
 
 
   # this turns the title into something url-friendly before saving

@@ -1,5 +1,5 @@
 class Geolocation < ActiveRecord::Base
-  attr_accessible :address, :info, :latitude, :longitude, :name
+  attr_accessible :address, :info, :latitude, :longitude, :name, :event_id
   after_validation :geocode, :if => :address_changed?
   validates :name, :presence => true
   validates :address, :presence => true

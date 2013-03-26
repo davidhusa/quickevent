@@ -28,7 +28,7 @@ Eventapp::Application.routes.draw do
 
   match ':event_id' => 'pages#home'
 
-  root :to => 'pages#home'
+  root :to => 'pages#all'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

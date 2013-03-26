@@ -1,0 +1,20 @@
+<header class="row">
+  <% content_for(:title) { "Welcome to Quick Event App" } %>
+  <h1>Quick Event App</h1>
+  <hr>  
+</header>
+<section class="page row">
+  <div>
+    Welcome to Quick Event App! <%= link_to "Log in to your event here", admin_root_path %>.
+  </div>
+  <h2>
+    Currently hosted event apps:
+  </h2>
+  <section class="home-nav">
+    <ul>
+      <% @events.each do |event| %>
+        <li class="row"><%= link_to event.title, "/#{event.url}/" %></li>
+      <% end %>
+    </ul>
+  </section>
+</section>

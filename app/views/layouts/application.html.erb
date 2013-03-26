@@ -30,14 +30,14 @@
 </head>
 <body>
 
- 
-  <div class="quickevent row">
-    <h1 class="title six mobile-two columns">
-      <%= link_to event_info.title, "/#{params[:event_id]}/" %>
-    </h1>
-    <h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
-  </div>
-
+  <% unless this_is_root %>
+    <div class="quickevent row">
+      <h1 class="title six mobile-two columns">
+        <%= link_to event_info.title, "/#{params[:event_id]}/" %>
+      </h1>
+      <h4 class="six mobile-two columns"><span class="radius label">Quick Event App</span></h4>
+    </div>
+  <% end %>
  <!-- dumps out all flash messages. START  -->
   <div id="flash"> 
     <% flash.each do |flash_type, value| %>

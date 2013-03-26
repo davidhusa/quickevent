@@ -1,14 +1,27 @@
 <header class="row">
 	<% content_for(:title) { "About #{event_info.title}" } %>
 	<!-- <h1 class="title"><a href="/"><%= event_info %></a></h1>	 -->
-	<h1>About</h1>
+	<h1>About <%= event_info.title %></h1>
 	<hr>	
 </header>
 <section class="row" style="padding-bottom: 20px;">
 	<h3>Organizer:</h3>
-	<p><%= @event_info.organizer %></p>
-	<h3>When:</h3>From: <%= pretty_time(@event_info.start) %> on <%= pretty_date(@event_info.start) %>   <br>To: <%= pretty_time(@event_info.end) %> on <%= pretty_date(@event_info.end) %></p>
-	<h3>About the Conference:</h3>
-	<p><%= @event_info.description %></p>
+	<p><%= event_info.organizer %></p>
+	<% if event_info.start || event_info.end %>
+		<h3>When:</h3>
+	<% end %>
+	<p>
+		<% if event_info.start %>
+			From: <%= pretty_time(event_info.start) %> on <%= pretty_date(event_info.start) %>
+		<% end %>
+		<br>
+		<% if event_info.end %>
+			To: <%= pretty_time(event_info.end) %> on <%= pretty_date(event_info.end) %>
+		<% end %>
+	</p>
+	<% if event_info.description %>
+		<h3>About the Conference:</h3>
+		<p><%= simple_format(event_info.description) %></p>
+	<% end %>
 	<hr style="border-top: none;">
 </section>

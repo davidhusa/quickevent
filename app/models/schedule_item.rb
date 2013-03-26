@@ -1,6 +1,6 @@
 class ScheduleItem < ActiveRecord::Base
   belongs_to :geolocation
-  attr_accessible :end, :info, :location, :map_url, :name, :start, :geolocation_id
+  attr_accessible :end, :info, :location, :map_url, :name, :start, :geolocation_id, :event_id
 
   validates :name, :presence => true
   validates :start, :presence => true

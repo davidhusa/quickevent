@@ -4,21 +4,21 @@
 
 
 # How we'll grab the location data from json
-returned = {}
+#returned = {}
+#
+#result = []
+#
+#locationAjax = ->
+#  $.ajax
+#    url: "locationjson.json"
+#    data: "id=2"
+#    type: "GET"
+#    contentType: "application/json"
+#    dataType: "json"
+#    success: (data) ->
+#      returned = data
+#    complete: ->
+#      result = returned
 
-result = []
 
-locationAjax = ->
-  $.ajax
-    url: "locationjson.json"
-    data: "id=2"
-    type: "GET"
-    contentType: "application/json"
-    dataType: "json"
-    success: (data) ->
-      returned = data
-    complete: ->
-      result = returned
-
-
-locationAjax()
+#locationAjax()

@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  attr_accessible :description, :end, :organizer, :start, :title, :twitter_hashtag
+  attr_accessible :description, :end, :organizer, :start, :title, :twitter_hashtag, :url
 
   validates :title, :presence => true
   validates :organizer, :presence => true
@@ -8,13 +8,13 @@ class Event < ActiveRecord::Base
   validates_uniqueness_of :url, :case_sensitive => false
     # In serious production setting, must also enforce uniqueness of event URLs on database level
 
-  before_validation do |event|
-    if event.url
-      event.url.downcase.gsub('', '-')
-    else
-      event.url = event.title.downcase.gsub(' ', '-')
-    end
-  end
+  # before_validation do |event|
+  #   if event.url
+  #     event.url.downcase.gsub('', '-')
+  #   else
+  #     event.url = event.title.downcase.gsub(' ', '-')
+  #   end
+  # end
 
 
   has_many :admin_users
@@ -25,7 +25,11 @@ class Event < ActiveRecord::Base
   has_many :schedule_items
 
   def short_description
-    maxlength = 32
-    (self.description[0...maxlength] || "") + (self.description.length > maxlength ? "..." : "")
+    if description
+      maxlength = 32
+      (self.description[0...maxlength] || "") + (self.description.length > maxlength ? "..." : "")
+    else
+      ""
+    end
   end
 end
