@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     end
   end
   def twitter
-    # @hashtag = "##{Event.first.twitter_hashtag}" || "#quickevents"
+
   end
   def home #Home/root for a specific event
     @pages = Page.where("event_id = ?", event_info.id).all

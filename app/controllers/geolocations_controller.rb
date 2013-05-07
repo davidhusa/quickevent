@@ -1,13 +1,6 @@
 class GeolocationsController < ApplicationController
   def index
     @locations = Geolocation.where("event_id = ?", event_info.id).all
-    # if Geolocation.first
-    #   @latitude = Geolocation.first.latitude
-    #   @longitude = Geolocation.first.longitude
-    # else
-    #   @latitude, @longitude = 0, 0
-    #   flash[:alert] = "No map locations loaded."
-    # end
   end
 
   def show

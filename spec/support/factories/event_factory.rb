@@ -3,6 +3,7 @@ FactoryGirl.define do
     title "Funcon"
     organizer "Me"
     twitter_hashtag "event"
+    url "funcon"
     description "The most important event of the year."
     start Time.new(2015,11,11,11,11,11, "-07:00")
     self.end Time.new(2015,12,12,12,12,12, "-07:00") 

@@ -1,6 +1,8 @@
 ActiveAdmin.register Geolocation do
   config.sort_order = "name_asc"
 
+  #scope_to current_user.event
+
   index do
     column :name
     column "Info", :short_info
